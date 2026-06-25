@@ -13,12 +13,13 @@ export const wedding = {
   timeLabel: "11:00 цаг",
 
   // Venue — update to your real location.
-  venueName: "Чингис хааны өргөө",
-  venueAddress: "Улаанбаатар хот",
+  venueName: "Улаанбаатар хот, СХД, 21-р хороо",
+  venueAddress: "Улаанбаатар хот, Сонгинохайрхан дүүрэг, 21-р хороо",
   // Google Maps embed/link (replace with your venue location)
   mapEmbedUrl:
-    "https://www.google.com/maps?q=Ulaanbaatar&output=embed",
-  mapLink: "https://maps.google.com/?q=Ulaanbaatar",
+    "https://www.google.com/maps?q=Songinokhairkhan+District+21st+khoroo+Ulaanbaatar&output=embed",
+  mapLink:
+    "https://maps.google.com/?q=Songinokhairkhan+District+21st+khoroo+Ulaanbaatar",
 
   // RSVP deadline text
   rsvpDeadline: "2026 оны 7-р сарын 25-ны дотор хариугаа өгнө үү",
