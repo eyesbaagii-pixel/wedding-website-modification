@@ -5,7 +5,7 @@ export function Hero() {
     <section className="relative flex min-h-svh items-center justify-center overflow-hidden">
       {/* Background image */}
       <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 scale-105 bg-cover bg-center bg-no-repeat blur-sm"
         style={{ backgroundImage: "url(/images/background.png)" }}
         aria-hidden="true"
       />
@@ -29,15 +29,6 @@ export function Hero() {
           <br />
           Урилга
         </h1>
-
-        {/* Wedding rings */}
-        <div className="mt-8 overflow-hidden rounded-full border border-background/40 bg-background/95 p-2 shadow-lg">
-          <img
-            src="/images/rings.jpg"
-            alt="Хаан бугуйвч, хатан сүйх алтан хос бөгж"
-            className="h-32 w-32 rounded-full object-cover sm:h-40 sm:w-40"
-          />
-        </div>
 
         <div className="my-8 h-px w-16 bg-background/60" aria-hidden="true" />
 

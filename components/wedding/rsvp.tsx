@@ -27,7 +27,7 @@ export function Rsvp() {
     <section className="bg-secondary px-6 py-24">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="font-heading text-4xl text-primary md:text-5xl">
-          Хариу өгөх
+          Та ирэх үү
         </h2>
         <div className="mx-auto mt-4 h-px w-16 bg-accent" />
         <p className="mt-6 font-sans text-base text-foreground/80">
@@ -75,7 +75,7 @@ export function Rsvp() {
                   name={googleForm.fields.name}
                   required
                   className="rsvp-input"
-                  placeholder="Бат-Эрдэнэ"
+                  placeholder="Нэрээ бичнэ үү"
                 />
               </Field>
 
@@ -85,27 +85,30 @@ export function Rsvp() {
                   name={googleForm.fields.phone}
                   required
                   className="rsvp-input"
-                  placeholder="99112233"
                 />
               </Field>
 
               <Field label="Та ирэх үү?" required>
-                <select
-                  name={googleForm.fields.attendance}
-                  required
-                  defaultValue=""
-                  className="rsvp-input"
-                >
-                  <option value="" disabled>
-                    Сонгоно уу
-                  </option>
-                  <option value={googleForm.options.attendance.yes}>
-                    {googleForm.options.attendance.yes}
-                  </option>
-                  <option value={googleForm.options.attendance.no}>
-                    {googleForm.options.attendance.no}
-                  </option>
-                </select>
+                <div className="grid gap-3 sm:grid-cols-2">
+                  {[
+                    googleForm.options.attendance.yes,
+                    googleForm.options.attendance.no,
+                  ].map((option) => (
+                    <label
+                      key={option}
+                      className="flex cursor-pointer items-center gap-3 rounded-lg border border-input bg-card px-4 py-3 font-sans text-base text-foreground shadow-sm transition-colors hover:border-primary has-[:checked]:border-primary has-[:checked]:bg-primary/10"
+                    >
+                      <input
+                        type="radio"
+                        name={googleForm.fields.attendance}
+                        value={option}
+                        required
+                        className="h-4 w-4 accent-primary"
+                      />
+                      {option}
+                    </label>
+                  ))}
+                </div>
               </Field>
 
               <Field label="Хэдэн хүн ирэх вэ?" required>
@@ -126,7 +129,7 @@ export function Rsvp() {
                 </select>
               </Field>
 
-              <Field label="Захиас (сонголтоор)">
+              <Field label="Ерөөлийн үг (заавал биш)">
                 <textarea
                   name={googleForm.fields.message}
                   rows={3}
