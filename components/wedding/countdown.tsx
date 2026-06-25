@@ -35,7 +35,7 @@ export function Countdown() {
     <section className="bg-secondary px-6 py-20">
       <div className="mx-auto max-w-3xl text-center">
         <h2 className="font-heading text-3xl text-primary md:text-4xl">
-          Хайрт өдөр хүртэл
+          Хамтдаа байх хором ойртсоор
         </h2>
         <div className="mx-auto mt-3 h-px w-12 bg-accent" />
 
