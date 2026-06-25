@@ -8,9 +8,9 @@ export const wedding = {
   // Wedding day (used for the countdown and event details).
   // Format: YYYY-MM-DDTHH:mm:ss (local time)
   // NOTE: Update this to your real ceremony date/time.
-  dateISO: "2026-08-01T17:00:00",
+  dateISO: "2026-08-01T11:00:00",
   dateLabel: "2026 оны 8-р сарын 1",
-  timeLabel: "17:00 цаг",
+  timeLabel: "11:00 цаг",
 
   // Venue — update to your real location.
   venueName: "Чингис хааны өргөө",
