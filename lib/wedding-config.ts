@@ -45,12 +45,21 @@ export const wedding = {
 //   https://docs.google.com/forms/d/e/FORM_ID/formResponse
 // ---------------------------------------------------------------------------
 export const googleForm = {
-  formActionUrl: "REPLACE_WITH_YOUR_GOOGLE_FORM_RESPONSE_URL",
+  formActionUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdgeQU3wwM_zFnBWdpnm4Ort6BVYsBlWO9qUO2cMbUv9jQF2g/formResponse",
   fields: {
-    name: "entry.0000000000", // Нэр
-    phone: "entry.0000000000", // Утас
-    attendance: "entry.0000000000", // Ирэх эсэх
-    guests: "entry.0000000000", // Хүний тоо
-    message: "entry.0000000000", // Захиас (optional)
+    name: "entry.1159086757", // Таны нэр
+    phone: "entry.1149540383", // Утасны дугаар
+    attendance: "entry.1932609704", // Та ирэх боломжтой юу?
+    guests: "entry.1678963508", // Хэдэн хүн ирэх вэ?
+    message: "entry.789765406", // Ерөөл, захиас (заавал биш)
+  },
+  // Exact option values — these MUST match the Google Form choices exactly.
+  options: {
+    attendance: {
+      yes: "Тийм, ирнэ",
+      no: "Уучлаарай, ирэхгүй",
+    },
+    guests: ["1", "2", "3", "4", "5+"],
   },
 } as const

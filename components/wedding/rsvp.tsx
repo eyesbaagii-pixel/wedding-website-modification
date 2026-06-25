@@ -99,23 +99,31 @@ export function Rsvp() {
                   <option value="" disabled>
                     Сонгоно уу
                   </option>
-                  <option value="Тийм, баяртайгаар ирнэ">
-                    Тийм, баяртайгаар ирнэ
+                  <option value={googleForm.options.attendance.yes}>
+                    {googleForm.options.attendance.yes}
                   </option>
-                  <option value="Уучлаарай, ирж чадахгүй">
-                    Уучлаарай, ирж чадахгүй
+                  <option value={googleForm.options.attendance.no}>
+                    {googleForm.options.attendance.no}
                   </option>
                 </select>
               </Field>
 
-              <Field label="Хэдэн хүн ирэх вэ?">
-                <input
-                  type="number"
+              <Field label="Хэдэн хүн ирэх вэ?" required>
+                <select
                   name={googleForm.fields.guests}
-                  min={1}
-                  defaultValue={1}
+                  required
+                  defaultValue=""
                   className="rsvp-input"
-                />
+                >
+                  <option value="" disabled>
+                    Сонгоно уу
+                  </option>
+                  {googleForm.options.guests.map((count) => (
+                    <option key={count} value={count}>
+                      {count}
+                    </option>
+                  ))}
+                </select>
               </Field>
 
               <Field label="Захиас (сонголтоор)">
