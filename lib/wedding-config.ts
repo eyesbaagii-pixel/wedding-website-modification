@@ -13,8 +13,9 @@ export const wedding = {
   timeLabel: "11:00 цаг",
 
   // Venue — update to your real location.
-  venueName: "Улаанбаатар хот, СХД, 21-р хороо",
-  venueAddress: "Улаанбаатар хот, Сонгинохайрхан дүүрэг, 21-р хороо",
+  venueName: "Лагерийн бүс",
+  venueAddress:
+    "Улаанбаатар хот, СХД, 21-р хороо, Ар гүнтийн даваанаас уруудаад Лагерийн бүс",
   // Google Maps embed/link (replace with your venue location)
   mapEmbedUrl:
     "https://www.google.com/maps?q=Songinokhairkhan+District+21st+khoroo+Ulaanbaatar&output=embed",
