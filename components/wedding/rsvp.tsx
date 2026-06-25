@@ -27,7 +27,7 @@ export function Rsvp() {
     <section className="bg-secondary px-6 py-24">
       <div className="mx-auto max-w-xl text-center">
         <h2 className="font-heading text-4xl text-primary md:text-5xl">
-          Хариу өгөх (RSVP)
+          Хариу өгөх
         </h2>
         <div className="mx-auto mt-4 h-px w-16 bg-accent" />
         <p className="mt-6 font-sans text-base text-foreground/80">

@@ -22,7 +22,8 @@ export const wedding = {
   mapLink: "https://maps.app.goo.gl/6gSkhnyhYgeYDZYy9",
 
   // RSVP deadline text
-  rsvpDeadline: "2026 оны 7-р сарын 25-ны дотор хариугаа өгнө үү",
+  rsvpDeadline:
+    "Бэлтгэлээ хангахын тулд 2026 оны 7-р сарын 25-ны дотор хариугаа өгнө үү",
 
   // Background music file placed in /public/audio
   musicSrc: "/audio/wedding-music.mp3",

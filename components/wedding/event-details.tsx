@@ -46,6 +46,16 @@ export function EventDetails() {
             referrerPolicy="no-referrer-when-downgrade"
           />
         </div>
+
+        <a
+          href={wedding.mapLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-7 py-3 font-sans text-base font-medium text-primary-foreground shadow-sm transition-opacity hover:opacity-90"
+        >
+          <MapPin className="h-5 w-5" />
+          Газрын зураг харах
+        </a>
       </div>
     </section>
   )
