@@ -18,9 +18,8 @@ export const wedding = {
     "Улаанбаатар хот, СХД, 21-р хороо, Ар гүнтийн даваанаас уруудаад Лагерийн бүс",
   // Google Maps embed/link (replace with your venue location)
   mapEmbedUrl:
-    "https://www.google.com/maps?q=Songinokhairkhan+District+21st+khoroo+Ulaanbaatar&output=embed",
-  mapLink:
-    "https://maps.google.com/?q=Songinokhairkhan+District+21st+khoroo+Ulaanbaatar",
+    "https://www.google.com/maps?q=48.080068,106.823396&z=16&output=embed",
+  mapLink: "https://maps.app.goo.gl/6gSkhnyhYgeYDZYy9",
 
   // RSVP deadline text
   rsvpDeadline: "2026 оны 7-р сарын 25-ны дотор хариугаа өгнө үү",
