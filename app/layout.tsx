@@ -1,17 +1,21 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
+import { Cormorant_Garamond, Manrope } from 'next/font/google'
 import './globals.css'
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
+const cormorant = Cormorant_Garamond({
+  variable: '--font-heading',
+  subsets: ['latin', 'cyrillic'],
+  weight: ['400', '500', '600', '700'],
+})
+const manrope = Manrope({
+  variable: '--font-body',
+  subsets: ['latin', 'cyrillic'],
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'Д.Балдан-Иш & Ц.Ичинхорлоо — Хуримын урилга',
+  description: 'Бидний хуримын ёслолд хүрэлцэн ирэхийг урьж байна.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -46,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="mn" className={`light ${cormorant.variable} ${manrope.variable} bg-background`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
