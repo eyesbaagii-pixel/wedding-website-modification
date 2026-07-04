@@ -42,7 +42,7 @@ export const wedding = {
 // ---------------------------------------------------------------------------
 export const rsvp = {
   // Paste your Web3Forms access key here:
-  web3formsAccessKey: "PASTE_YOUR_ACCESS_KEY_HERE",
+  web3formsAccessKey: "3847d516-b622-4d35-8dfa-33629e088409",
 
   options: {
     attendance: {
