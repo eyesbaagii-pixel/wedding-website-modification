@@ -44,7 +44,7 @@ export const wedding = {
 // ---------------------------------------------------------------------------
 export const rsvp = {
   // Paste your Apps Script Web app URL here (must end with /exec)
-  endpoint: "https://script.google.com/macros/s/AKfycbw11TZ0x6rVyrpiQVqvesYqXiJHvDzpStkI6DFR69wBJb21r8t9OVVDELgGPhMZTfOwPA/exec",
+  endpoint: "https://script.google.com/macros/s/AKfycbxJCnrXN4bf5BrguBVyRRIgFA_h-93ehdoittIRaJvazIpYGnnLsv-vNesbk6ASlAHtdA/exec",
 
   options: {
     attendance: {
