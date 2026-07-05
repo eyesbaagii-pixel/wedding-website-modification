@@ -79,7 +79,7 @@ export function Rsvp() {
           <>
             {!configured && (
               <p className="mt-6 rounded-lg border border-accent/50 bg-accent/15 px-4 py-3 text-left font-sans text-sm text-accent-foreground">
-                Тохиргоо хүлээгдэж байна: <code>lib/wedding-config.ts</code>{" "}
+                Тохиргоо хүлээгдэж байна: <code>lib/wedding-config.ts</code>{"534cc738-843b-4fa3-b5a8-1cdd3f81b1ec"}
                 файлд Web3Forms-ийн Access Key-ээ оруулна уу
                 (web3forms.com дээрээс үнэгүй авна).
               </p>
